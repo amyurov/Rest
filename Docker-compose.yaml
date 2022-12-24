@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  auth-app:
+    container_name: authcomposecon
+    image: auth:1.0
+    build:
+      dockerfile: Dockerfile
+    tty: true
+    ports:
+    -  8888:8080
+
+
+
+
+
